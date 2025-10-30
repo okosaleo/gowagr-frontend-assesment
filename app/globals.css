@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.pattern{
+  background-image: url('/pattern.png');
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 0.06;           
+  filter: blur(.4px);   
+  pointer-events: none;
+  z-index: -10;
+}
+

@@ -48,7 +48,7 @@ export default function Latest() {
         <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-6">
             {blogImage.map((props) => (
               <div key={props.id} className="flex flex-col gap-5">
-                  <div className="relative w-full aspect-[378/240] max-w-[378px] mx-auto lg:mx-0"> 
+                  <div className="relative w-full aspect-378/240 max-w-[378px] mx-auto lg:mx-0"> 
                     <Image 
                         src={props.image} 
                         alt="Blog Post Image" 

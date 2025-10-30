@@ -9,7 +9,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
   const overlayRef = useRef<HTMLDivElement>(null)
-  const linksRef = useRef<(HTMLAnchorElement | null)[]>([])
+  const linksRef = useRef<(HTMLAnchorElement | HTMLDivElement | null)[]>([])
 
   // Toggle menu
   const toggleMenu = () => {
@@ -158,7 +158,7 @@ export default function NavBar() {
           {/* Navigation Links */}
           <div className='flex flex-col gap-6'>
             <Link
-              ref={(el) => (linksRef.current[0] = el)}
+              ref={(el) => { linksRef.current[0] = el }}
               href="/"
               className='text-white text-2xl hover:text-[#D0F091] transition-colors'
               onClick={toggleMenu}
@@ -166,7 +166,7 @@ export default function NavBar() {
               Home
             </Link>
             <Link
-              ref={(el) => (linksRef.current[1] = el)}
+              ref={(el) => { linksRef.current[1] = el }}
               href="/"
               className='text-white text-2xl hover:text-[#D0F091] transition-colors'
               onClick={toggleMenu}
@@ -174,7 +174,7 @@ export default function NavBar() {
               Partners
             </Link>
             <Link
-              ref={(el) => (linksRef.current[2] = el)}
+              ref={(el) => { linksRef.current[2] = el }}
               href="/"
               className='text-white text-2xl hover:text-[#D0F091] transition-colors'
               onClick={toggleMenu}
@@ -182,7 +182,7 @@ export default function NavBar() {
               How to play
             </Link>
             <Link
-              ref={(el) => (linksRef.current[3] = el)}
+              ref={(el) => { linksRef.current[3] = el }}
               href="/"
               className='text-white text-2xl hover:text-[#D0F091] transition-colors'
               onClick={toggleMenu}
@@ -193,7 +193,7 @@ export default function NavBar() {
 
           {/* Social Links */}
           <div 
-            ref={(el) => (linksRef.current[4] = el)}
+            ref={(el) => { linksRef.current[4] = el }}
             className='flex gap-8 items-center pt-8 border-t border-gray-700'
           >
             <Link href="/" className='hover:opacity-70 transition-opacity'>

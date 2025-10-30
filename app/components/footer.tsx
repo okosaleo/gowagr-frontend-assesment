@@ -16,14 +16,22 @@ export default function Footer() {
             <h2 className="ml-12 sm:ml-32 md:ml-52 lg:ml-68">Squads</h2>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-0 mt-6 lg:mt-0">
-            <div className="flex">
+          <div className="flex flex-col items-center gap-6 sm:gap-0 mt-6 lg:mt-0">
+            <div className="flex lg:flex-row flex-col items-center">
+              <div className="flex">
               <div className="relative w-40 h-[153px] sm:w-[190px] sm:h-[182px] md:w-[238px] md:h-[228.58px] -mt-8 sm:-mt-10 md:-mt-12">
                  <Image src="/fot1.png" alt="footer image" fill className="object-contain" />
               </div>
               <div className="relative w-40 h-[153px] sm:w-[190px] sm:h-[182px] md:w-[238px] md:h-[228.58px] mt-2 sm:mt-3 md:mt-4 -ml-8 sm:-ml-10 md:-ml-12">
                  <Image src="/fot2.png" alt="footer image" fill className="object-contain" />
               </div>
+              </div>
+              <div className="sm:mt-16 w-3/4 mt-3 mb-4 flex items-center justify-center md:mt-16 lg:mt-26 sm:ml-6 md:ml-8 lg:ml-10">
+              <Link href="/" className="px-4 sm:px-5 py-2.5 sm:py-3 flex gap-2 bg-[#D0F091] text-[#2A343F] rounded-[7.62px] hover:bg-[#c0e081] transition-colors text-sm sm:text-base font-medium">
+                <p>Sign Up on Squads</p>
+                <Image src="/cash.png" alt="cash" width={18} height={23} className="w-4 h-5 sm:w-[18px] sm:h-[23px]" />
+              </Link>
+            </div>
             </div>
 
             <div className={`${Gloria.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#D0F091] lg:hidden flex flex-col gap-1`}>
@@ -31,18 +39,11 @@ export default function Footer() {
             <h2 className="text-[#88C80C]">F**k with</h2>
             <h2 className="ml-12 sm:ml-32 md:ml-52 lg:ml-68">Squads</h2>
           </div>
-
-            <div className="sm:mt-16 md:mt-20 lg:mt-26 sm:ml-6 md:ml-8 lg:ml-10">
-              <Link href="/" className="px-4 sm:px-5 py-2.5 sm:py-3 flex gap-2 bg-[#D0F091] text-[#2A343F] rounded-[7.62px] hover:bg-[#c0e081] transition-colors text-sm sm:text-base font-medium">
-                <p>Sign Up on Squads</p>
-                <Image src="/cash.png" alt="cash" width={18} height={23} className="w-4 h-5 sm:w-[18px] sm:h-[23px]" />
-              </Link>
-            </div>
           </div>
         </div>
 
         {/* Right Images - Hidden on mobile, shown on tablet+ */}
-        <div className="flex relative justify-center lg:justify-start">
+        <div className="flex relative justify-center  lg:justify-start">
           <div className="relative w-[180px] h-[170px] lg:w-[278px] lg:h-[263px] z-10 -mr-32 lg:-mr-60 mt-20 lg:mt-28 -rotate-5">
              <Image src="/fot3.png" alt="footer image" fill className="object-contain" />
           </div>

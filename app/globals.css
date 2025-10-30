@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1026px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+}
+
 .pattern{
   background-image: url('/pattern.png');
   background-repeat: repeat;

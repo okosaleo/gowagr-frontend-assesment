@@ -5,7 +5,10 @@ import Image from 'next/image'
 export default function Start() {
   return (
     <div className='bg-[#141B23] -mt-9 z-10 flex items-center flex-col justify-center w-full min-h-screen py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8'>
-        <div className='mt-16 sm:mt-24 md:mt-32 lg:mt-38 flex items-center justify-center p-4 sm:p-6 flex-col max-w-7xl'>
+        <div className='mt-16 sm:mt-24 relative md:mt-32 lg:mt-38 flex items-center justify-center p-4 sm:p-6 flex-col max-w-7xl'>
+            <div className="absolute z-20 lg:-left-28 left-0 lg:bottom-52 bottom-2">
+                    <Image src="/vec3.png" alt="vector" width={31} height={28.44} />
+                </div>
             <div>
                 <h2 className={`${Anek.className} text-[#D2D4D7] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center leading-tight`}>
                     START WINNING 
@@ -21,8 +24,13 @@ export default function Start() {
         </div>
 
         {/* Bento Cards */}
-        <div className='bg-[#121920] flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-6 w-full max-w-[1183px] px-4 sm:px-6 md:px-12 lg:px-26 py-6 sm:py-8 md:py-10 mt-12 sm:mt-16 md:mt-20 lg:mt-24 rounded-2xl md:rounded-3xl'>
-            
+        <div className='relative bg-[#121920] flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-6 w-full max-w-[1183px] px-4 sm:px-6 md:px-12 lg:px-26 py-6 sm:py-8 md:py-10 mt-12 sm:mt-16 md:mt-20 lg:mt-24 rounded-2xl md:rounded-3xl'>
+            <div className="absolute  z-20 lg:-left-3 left-64 lg:bottom-36 -bottom-14">
+                <Image src="/startvec1.png" alt="vector" width={27} height={28.44} />
+            </div>
+            <div className="absolute lg:block hidden z-20 -right-3 top-[400px]">
+                <Image src="/startvec2.png" alt="vector" width={27} height={28.44} />
+            </div>
             {/* Row 1 */}
             <div className='w-full flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6'>
                 {/* Card 1 */}

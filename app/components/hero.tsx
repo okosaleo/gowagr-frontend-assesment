@@ -137,7 +137,7 @@ export default function Hero() {
               </div>
               <div 
                 ref={mainImageRef}
-                className="relative lg:w-[844px] lg:h-[300px] w-[374.98px] h-[148.2px] mt-16 opacity-0"
+                className="relative lg:w-[844px] lg:h-[300px] w-[372.98px] h-[148.2px] mt-16 opacity-0"
               >
                 <Image priority src="/mainImg.png" alt="Hero Image" fill />
               </div>
@@ -179,8 +179,8 @@ export default function Hero() {
         
         {/* Show on Mobile */}
         <div className="lg:hidden flex justify-between w-full">
-          <div className="mt-20 -ml-12">
-            <div ref={(el) => { vectorRefs.current[8] = el }} className="opacity-0">
+          <div className="mt-20 -ml-12 -z-10">
+            <div ref={(el) => { vectorRefs.current[8] = el }} className="opacity-0 -z-20">
               <Image src="/vec5.png" alt="vector" width={129.08} height={140.79} />
             </div>
           </div>

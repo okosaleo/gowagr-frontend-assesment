@@ -337,7 +337,7 @@ export default function Win() {
                 return (
                   <div
                     key={playerProp.player.id}
-                    className="bg-[#262F3B] w-[350px] h-[89px] rounded-lg p-3 flex gap-3"
+                    className="bg-[#262F3B] w-[330px] h-[89px] rounded-lg p-3 flex gap-3"
                   >
                     <div className="flex gap-3 w-3/5">
                       <div className="relative w-[39.18px] h-[39.18px]">
